@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Homework 2</title>
+  </head>
+
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    body {
+      min-height: 100vh;
+      min-width: 100vw;
+    }
+    .card {
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      max-width: 600px;
+      height: max-content;
+      padding: 1em;
+
+      position: relative;
+    }
+
+    .card h2 {
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 0.5em;
+    }
+
+    .card p {
+      padding: 0.5em;
+      font-weight: bold;
+      color: white;
+      text-align: center;
+    }
+
+    .card img {
+      position: absolute;
+      top: 60px;
+      z-index: -1;
+
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .question {
+      margin: 2em auto;
+      max-width: 800px;
+      text-align: center;
+    }
+  </style>
+  <body>
+    <h3 class="question">
+      In this assignment we had to use position relative and absolute to postion
+      a image behind some text and use top/bottom/left/right attributes so that,
+      the image is just behind the description and not the heading of the card.
+    </h3>
+    <div class="card">
+      <h2>This is the card title</h2>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+        odio rem nihil architecto, quia modi molestiae voluptatem ullam debitis
+        possimus id in nostrum quod maiores impedit quasi! Expedita, quis ut.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+        odio rem nihil architecto, quia modi molestiae voluptatem ullam debitis
+        possimus id in nostrum quod maiores impedit quasi! Expedita, quis ut.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+        odio rem nihil architecto, quia modi molestiae voluptatem ullam debitis
+        possimus id in nostrum quod maiores impedit quasi! Expedita, quis ut.
+      </p>
+
+      <img
+        src="https://image.shutterstock.com/image-vector/circular-glow-neon-circle-vector-600w-1628610820.jpg"
+        alt=""
+        srcset=""
+      />
+    </div>
+  </body>
+</html>
