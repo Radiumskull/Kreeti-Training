@@ -28,7 +28,7 @@
       position: relative;
     }
 
-    .card h2 {
+    .card .card__head {
       text-transform: uppercase;
       text-align: center;
       margin-bottom: 0.5em;
@@ -36,20 +36,20 @@
       border: 1px black solid;
     }
 
-    .card p {
+    .card .card__text {
       padding: 0.5em;
       font-weight: bold;
       color: white;
       text-align: center;
     }
 
-    .card img {
+    .card .card__img {
       position: absolute;
       top: 60px;
       z-index: -1;
 
       height: 100%;
-      width: 100%;
+      width: 95%;
       object-fit: cover;
     }
 
@@ -66,8 +66,8 @@
       the image is just behind the description and not the heading of the card.
     </h3>
     <div class="card">
-      <h2>This is the card title</h2>
-      <p>
+      <h2 class="card__head">This is the card title</h2>
+      <p class="card__text">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio
         odio rem nihil architecto, quia modi molestiae voluptatem ullam debitis
         possimus id in nostrum quod maiores impedit quasi! Expedita, quis ut.
@@ -80,6 +80,7 @@
       </p>
 
       <img
+        class="card__img"
         src="https://image.shutterstock.com/image-vector/circular-glow-neon-circle-vector-600w-1628610820.jpg"
         alt=""
         srcset=""
